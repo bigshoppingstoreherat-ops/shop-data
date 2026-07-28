@@ -1,0 +1,25 @@
+name: Update Products JSON
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Fetch data from GAS
+        run: |
+          curl -o products.json "https://script.google.com/macros/s/AKfycbwz80fmQyI8mJxEvtalpW84o1qvETQoO75hHb9yOTH4gYP81im6QAXpfXgPJTmHsyM/exec?action=getFullData"
+      
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add products.json
+          git diff --staged --quiet || git commit -m "🔄 Auto-update $(date)"
+          git push
