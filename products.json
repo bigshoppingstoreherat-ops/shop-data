@@ -1,0 +1,26 @@
+{
+  "products": [
+    {"id":"1","name":"پیراهن کتان مردانه","category":"مردانه","price":1200,"discount_price":null,"description":"پارچه کتان مرغوب","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"2","name":"کفش ورزشی زنانه","category":"کفش","price":1500,"discount_price":1200,"description":"سایز 36 تا 40","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"3","name":"شلوار جین مردانه","category":"مردانه","price":1200,"discount_price":1500,"description":"جین اصل","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"4","name":"کفش زنانه چرم","category":"کفش","price":2000,"discount_price":2500,"description":"چرم طبیعی","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"5","name":"کت و شلوار مردانه","category":"مردانه","price":4200,"discount_price":5000,"description":"پارچه ایتالیایی","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"6","name":"کفش ورزشی زنانه 6","category":"کفش","price":2350,"discount_price":2800,"description":"سایز 36 تا 40","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"},
+    {"id":"7","name":"شامپو","category":"شستشو","price":200,"discount_price":null,"description":"","image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStn303Zdjre9YOoA5P4o3sgPWAg8z9PGCZNlSKnZOKAHBtk4Oa81RAgEBgY4SnGg01xrg58YINpMYxtcCtQm-feOcPBe2UehycTrs8fOlZtuOmqLjvEnXER8_lXgHYqg_R44jVHngl1WBu0cVS7T_OV8AxsXs9WHM96iQWXvGvjPClsYR77UUhz5lJKU/s320/logo.png","stock":"موجود"}
+  ],
+  "zones": [
+    {"name":"هرات مرکز","cost":40},
+    {"name":"حومه هرات","cost":80}
+  ],
+  "settings": {
+    "Store_Name":"فروشگاه لباس و کفش هرات",
+    "Phone_Number":"0792489611",
+    "Address":"هرات، جاده اصلی، مجتمع الماس",
+    "Store_Status":"باز",
+    "Working_Hours":"08:00-22:00",
+    "Free_Shipping_For_All":"خیر",
+    "WhatsApp_Number":"93792489611"
+  },
+  "version":"1.0.0",
+  "lastUpdate":1734567890123
+}
