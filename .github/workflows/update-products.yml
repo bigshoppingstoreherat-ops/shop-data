@@ -9,14 +9,15 @@ jobs:
   update:
     runs-on: ubuntu-latest
     
-    # ✅ دسترسی نوشتن برای توکن پیش‌فرض
     permissions:
       contents: write
 
     steps:
-      # ✅ توکن شخصی رو حذف کن
+      # استفاده از توکن پیش‌فرض گیت‌هاب برای دسترسی به ریپازیتوری خصوصی
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Fetch data from GAS
         run: |
