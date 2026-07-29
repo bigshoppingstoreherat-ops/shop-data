@@ -9,15 +9,14 @@ jobs:
   update:
     runs-on: ubuntu-latest
     
-    # ✅ این دو خط رو اضافه کن
+    # ✅ دسترسی نوشتن برای توکن پیش‌فرض
     permissions:
       contents: write
 
     steps:
+      # ✅ توکن شخصی رو حذف کن
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GAS_UPDATE_TOKEN }}
       
       - name: Fetch data from GAS
         run: |
