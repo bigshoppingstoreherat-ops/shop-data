@@ -13,19 +13,21 @@ jobs:
       contents: write
 
     steps:
-      # استفاده از توکن پیش‌فرض گیت‌هاب برای دسترسی به ریپازیتوری خصوصی
+      # گام دانلود کدها بدون نیاز به هیچ توکن اضافی
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Fetch data from GAS
         run: |
-          curl -o products.json "https://script.google.com/macros/s/AKfycbwz80fmQyI8mJxEvtalpW84o1qvETQoO75hHb9yOTH4gYP81im6QAXpfXgPJTmHsyM/exec?action=getFullData"
+          curl -o products.json "https://script.google.com/macros/s/AKfycbwz80fmQyI8mJxEvtalpW84o1qvETQoO75hHb9yOTH4gYP81im6QAXpfXgPJTmHsyM/exec"
       
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add products.json
-          git diff-index --quiet HEAD || (git commit -m "🤖 Auto-update data" && git push)
+          
+          # تغییر ساختار آدرس برای استفاده مستقیم از توکن تزریق‌شده در بخش پوش خصوصی
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com{{ github.repository }}.git"
+          
+          git diff-index --quiet HEAD || (git commit -m "🤖 Auto-update data" && git push origin main)
